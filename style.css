@@ -1,0 +1,266 @@
+root {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+
+/* //////// [HEADER] //////// */
+
+header {
+    height: 450px;
+    background-image: url(images/headerback.jpg);
+    background-position: center;
+    background-size: cover; /* !!! fajne */
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255,255,255,0.15); 
+    float: left;
+    margin: 10px 0px 0px 30px;
+    align-content: center;
+    padding: 5px;
+    border: solid white 3px;
+}
+
+.logo img {
+    height: 45px;
+    padding-top: 5px;
+}
+header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    clear:both;
+    padding-top: 100px;
+}
+
+header h1 span {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: solid white 10px;
+}
+
+header nav {
+    float:right;
+    margin: 30px 30px 0px 0px;
+}
+nav a{
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    
+    color: rgba(0,0,0,0.7);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgba(0,0,0,1);
+}
+
+.kicker {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color:white;
+    line-height: 1;
+}
+
+/* //////// [ABOUT] //////// */
+
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e1c184;
+    margin-top: 100px;
+    padding-top: 100px 0 30px;
+    
+}
+
+.face-lockup {
+    max-width: 780px; /*max bo rwd? */
+    display: flex;  
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stary{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    order:3;
+}
+
+.pencildiv, .monitordiv, .cameradiv, .settingsdiv {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #e5eaee;
+}
+
+.pencil, .monitor, .camera, .settings {
+    height: 50px;
+    width: 50px;
+    padding: 25px;
+    
+}
+.pencildiv {
+    order: 1;
+}
+.monitordiv {
+    order: 2;
+}
+.cameradiv {
+    order: 4;
+}
+.settingsdiv {
+    order: 5;
+}
+
+@media (max-width: 670px) {
+    
+    .face-lockup{
+       display: block;
+       text-align: center;
+    }
+    .pencildiv, .monitordiv, .cameradiv, .settingsdiv {
+        display: inline-block;
+        margin: 10px;
+    }
+    .stary{    
+        display:block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-bottom: 30px;  
+    }
+}
+    
+.blurb {
+    max-width: 620px;
+    padding: 0 15px;
+    margin: 50px auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* ///////////////skill lockup//////////////// */
+
+.skill-lockup {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: #999; 
+}
+
+.skill-unit {
+    width: 250px;
+    float: left;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.skill-icon {
+    font-size: 0; /*bo bug jest jak jest spacja miedzy spanami*/
+    margin: 0px 0 30px;
+}
+
+.skill-icons span{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background-color: #d1442b; /*accent color*/
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.skill-icons span:after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.skill-icons.skill-1 span:nth-child(n+2) {
+    background-color: #e1c184; } 
+.skill-icons.skill-2 span:nth-child(n+3) {
+    background-color: #e1c184; } 
+.skill-icons.skill-3 span:nth-child(n+4) {
+    background-color: #e1c184; } 
+.skill-icons.skill-4 span:nth-child(n+5) {
+    background-color: #e1c184; } 
+.skill-icons.skill-5 span:nth-child(n+6) {
+    background-color: #e1c184; } 
+.skill-icons.skill-6 span:nth-child(n+7) {
+    background-color: #e1c184; } 
+.skill-icons.skill-7 span:nth-child(n+8) {
+    background-color: #e1c184; } 
+.skill-icons.skill-8 span:nth-child(n+9) {
+    background-color: #e1c184; } 
+.skill-icons.skill-9 span:nth-child(n+10) {
+    background-color: #e1c184; } 
+.skill-icons.skill-10 span:nth-child(n+11) {
+    background-color: #e1c184; } 
+
+@media (max-width: 670px) {
+    .skill-lockup {
+        width: 250px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* //////// FOOTER //////// */
+
+footer {
+    background-image: url(images/headerback.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    padding-top: 20px;
+    
+}
+.lockup {
+    padding:20px;
+    padding-left: 0px;
+    float:left;
+}
+
+.content-wrap {
+
+}
+
+.copyright {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba (0,0,0,0.5);
+    padding-left: 20px;
+    margin: 0px;
+}
