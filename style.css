@@ -235,6 +235,75 @@ h3 {
     }
 }
 
+/* //////// WORK //////// */
+
+.alt-section {
+	padding-top: 0px;
+	background-color: #e5eaee;
+}
+
+.thumb-container {
+	max-width: 960px;
+	margin: 0px auto;
+	padding-bottom: 100px;
+	
+}
+
+.thumb-container .thumb-unit {
+	width: 25%;
+	background-color: pink;
+	display: block;
+	float: left;
+	position: relative;
+	padding-top: 20%;
+	
+	background-image: url(images/work/cityscape2D.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 700px) {
+	.thumb-container .thumb-unit {
+		width: 50%;
+		padding-top: 25%;
+	}
+}
+
+.thumb-overlay {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: transparent;
+	text-align: center;
+	opacity: 0;
+	color: transparent;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+.thumb-overlay strong{
+	font-size: 22px;
+	font-weight: 200;
+}
+
+.thumb-overlay:hover {
+	position: absolute;
+	transition: opacity 0.4s linear;
+	background-color: rgba(209, 68, 43,0.7);
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	opacity: 1;
+}
+
+.clearboth {
+	clear: both;
+}
 
 /* //////// FOOTER //////// */
 
